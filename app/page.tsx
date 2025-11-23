@@ -18,6 +18,7 @@ import {
   CheckCircle2,
   Clock,
   DollarSign,
+  IndianRupee,
   MessageCircle,
   Package,
   Shield,
@@ -34,13 +35,13 @@ import heroImage from '../public/hero-metalwork.jpg'
 export default function page() {
   // const [estimatedPrice, setEstimatedPrice] = useState<string>('')
   // const [estimatedTime, setEstimatedTime] = useState<string>('')
-const estimatedPrice = 0
-const estimatedTime = 0
+  const estimatedPrice = 0
+  const estimatedTime = 0
 
   const handlePriceCalculation = () => {
     // setEstimatedPrice('₹15,000 - ₹25,000')
     // setEstimatedTime('7-10 days')
-    return 
+    return
   }
 
   return (
@@ -82,9 +83,44 @@ const estimatedTime = 0
             </div>
           </div>
         </section>
-
+        {/* Trust Signals */}
+        <section id='about' className='container mx-auto px-4 mb-20'>
+          <div className='bg-muted/30 rounded-3xl p-8 md:p-12'>
+            <div className='grid grid-cols-2 md:grid-cols-5 gap-8 text-center'>
+              <div>
+                <Award className='h-10 w-10 mx-auto mb-3 text-steel-blue' />
+                <p className='font-bold text-2xl mb-1'>22+</p>
+                <p className='text-sm text-muted-foreground'>
+                  Years Experience
+                </p>
+              </div>
+              <div>
+                <CheckCircle2 className='h-10 w-10 mx-auto mb-3 text-steel-blue' />
+                <p className='font-bold text-2xl mb-1'>200+</p>
+                <p className='text-sm text-muted-foreground'>Projects</p>
+              </div>
+              <div>
+                <Shield className='h-10 w-10 mx-auto mb-3 text-steel-blue' />
+                <p className='font-bold text-2xl mb-1'>100%</p>
+                <p className='text-sm text-muted-foreground'>
+                  Quality Assurance
+                </p>
+              </div>
+              <div>
+                <IndianRupee className='h-10 w-10 mx-auto mb-3 text-steel-blue' />
+                <p className='font-bold text-2xl mb-1'>Secure</p>
+                <p className='text-sm text-muted-foreground'>Payments</p>
+              </div>
+              <div>
+                <Clock className='h-10 w-10 mx-auto mb-3 text-steel-blue' />
+                <p className='font-bold text-2xl mb-1'>On-Time</p>
+                <p className='text-sm text-muted-foreground'>Delivery</p>
+              </div>
+            </div>
+          </div>
+        </section>
         {/* AI Suggestions Box */}
-        <section className='container mx-auto px-4 mb-16'>
+        {/* <section className='container mx-auto px-4 mb-16'>
           <Card className='bg-steel-light/30 border-border shadow-sm'>
             <CardContent className='p-6'>
               <div className='flex items-start gap-3 mb-4'>
@@ -96,15 +132,15 @@ const estimatedTime = 0
               <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-4 text-sm'>
                 <div className='flex items-center gap-2'>
                   <CheckCircle2 className='h-4 w-4 text-steel-blue' />
-                  <span>Similar design ideas</span>
+                  <span>200+ Projects Completed</span>
                 </div>
                 <div className='flex items-center gap-2'>
                   <CheckCircle2 className='h-4 w-4 text-steel-blue' />
-                  <span>Material Recommendations (MS/SS/GI)</span>
+                  <span>22+ Years of Experience</span>
                 </div>
                 <div className='flex items-center gap-2'>
                   <CheckCircle2 className='h-4 w-4 text-steel-blue' />
-                  <span>Estimated cost range</span>
+                  <span>10+ Dedicated Professinals</span>
                 </div>
                 <div className='flex items-center gap-2'>
                   <CheckCircle2 className='h-4 w-4 text-steel-blue' />
@@ -113,7 +149,7 @@ const estimatedTime = 0
               </div>
             </CardContent>
           </Card>
-        </section>
+        </section> */}
 
         {/* Price Estimator */}
         <section id='pricing' className='container mx-auto px-4 mb-20'>
@@ -226,7 +262,7 @@ const estimatedTime = 0
         <Catalog />
 
         {/* Verified Fabricators */}
-        <section className='container mx-auto px-4 mb-20'>
+        {/* <section className='container mx-auto px-4 mb-20'>
           <h2 className='text-3xl font-bold text-center mb-12'>
             Verified Fabricators
           </h2>
@@ -284,10 +320,10 @@ const estimatedTime = 0
               </Card>
             ))}
           </div>
-        </section>
+        </section> */}
 
         {/* Before-After Gallery */}
-        <section className='container mx-auto px-4 mb-20'>
+        {/* <section className='container mx-auto px-4 mb-20'>
           <h2 className='text-3xl font-bold text-center mb-12'>
             Before & After
           </h2>
@@ -313,7 +349,7 @@ const estimatedTime = 0
               </CardContent>
             </Card>
           </div>
-        </section>
+        </section> */}
 
         {/* Reviews Section */}
         <section className='container mx-auto px-4 mb-20'>
@@ -405,7 +441,7 @@ const estimatedTime = 0
         </section>
 
         {/* Recommended Designs */}
-        <section className='container mx-auto px-4 mb-20'>
+        {/* <section className='container mx-auto px-4 mb-20'>
           <div className='flex items-center justify-between mb-8'>
             <h2 className='text-3xl font-bold'>Recommended Designs For You</h2>
             <Button variant='ghost'>
@@ -434,44 +470,7 @@ const estimatedTime = 0
               </Card>
             ))}
           </div>
-        </section>
-
-        {/* Trust Signals */}
-        <section id='about' className='container mx-auto px-4 mb-20'>
-          <div className='bg-muted/30 rounded-3xl p-8 md:p-12'>
-            <div className='grid grid-cols-2 md:grid-cols-5 gap-8 text-center'>
-              <div>
-                <Award className='h-10 w-10 mx-auto mb-3 text-steel-blue' />
-                <p className='font-bold text-2xl mb-1'>7+</p>
-                <p className='text-sm text-muted-foreground'>
-                  Years Experience
-                </p>
-              </div>
-              <div>
-                <CheckCircle2 className='h-10 w-10 mx-auto mb-3 text-steel-blue' />
-                <p className='font-bold text-2xl mb-1'>500+</p>
-                <p className='text-sm text-muted-foreground'>Projects</p>
-              </div>
-              <div>
-                <Shield className='h-10 w-10 mx-auto mb-3 text-steel-blue' />
-                <p className='font-bold text-2xl mb-1'>100%</p>
-                <p className='text-sm text-muted-foreground'>
-                  Verified Fabricators
-                </p>
-              </div>
-              <div>
-                <DollarSign className='h-10 w-10 mx-auto mb-3 text-steel-blue' />
-                <p className='font-bold text-2xl mb-1'>Secure</p>
-                <p className='text-sm text-muted-foreground'>Payments</p>
-              </div>
-              <div>
-                <Clock className='h-10 w-10 mx-auto mb-3 text-steel-blue' />
-                <p className='font-bold text-2xl mb-1'>On-Time</p>
-                <p className='text-sm text-muted-foreground'>Delivery</p>
-              </div>
-            </div>
-          </div>
-        </section>
+        </section> */}
 
         <Footer />
 
