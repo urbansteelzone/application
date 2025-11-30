@@ -16,7 +16,7 @@ const Footer = () => {
           <div>
             <h3 className='font-bold text-lg mb-4'>About Urban Steel Zone</h3>
             <p className='text-sm text-muted-foreground leading-relaxed'>
-              Premium steel fabrication services with 7+ years of experience.
+              Premium steel fabrication services with 22+ years of experience.
               Custom gates, grills, furniture, and metal works delivered with
               precision and quality.
             </p>

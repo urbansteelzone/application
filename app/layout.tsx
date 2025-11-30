@@ -1,3 +1,5 @@
+import AuthManager from '@/components/auth-manager'
+import { AuthProvider } from '@/contexts/auth-context'
 import type { Metadata } from 'next'
 import './globals.css'
 
@@ -13,7 +15,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className='antialiased'>{children}</body>
+      <body>
+        <AuthProvider>
+          <AuthManager /> {/* Pops up when needed */}
+          {children}
+        </AuthProvider>
+      </body>
     </html>
   )
 }
