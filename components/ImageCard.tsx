@@ -46,7 +46,7 @@ export default function ImageCard({ publicId }: { publicId: string }) {
         crop='fill'
         alt='Gallery Image'
       />
-      <button
+      {/* <button
         // Disable if loading, or if already interested (prevents double submits)
         disabled={isLoading || isInterested}
         onClick={() => protect(() => handleInterestedClick(publicId))}
@@ -57,7 +57,7 @@ export default function ImageCard({ publicId }: { publicId: string }) {
           : isInterested
           ? 'Interest Sent!'
           : 'I am Interested'}
-      </button>
+      </button> */}
     </div>
   )
 }
